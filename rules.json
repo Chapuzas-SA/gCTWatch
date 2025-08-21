@@ -1,0 +1,7 @@
+{
+  "critical_services": "(?i)\\b(vpn|rdp|citrix|secure|remote)\\b",
+  "internal_leak": "(?i)\\b(staging|preprod|qa|dev|test|backup|old|internal|intranet|sandbox)\\b|\\.local$|\\.lan$|\\.corp$|\\.int$",
+  "phishing": "(?i)\\b(paypa1|paypal\\-secure|paypal\\-login|paypa[l1]|g[0o]ogle|micros[o0]ft|faceb[o0]ok|am[a4]zon|appleid|outl[o0]ok|secure\\-login|verify\\-account)\\b",
+  "cloud_ephemeral": "(?i)\\b(aws|amazonaws|cloudfront|azurewebsites|blob\\.core\\.windows\\.net|appspot|firebaseapp|herokuapp|ngrok)\\b|[0-9a-f]{20,}",
+  "industrial_control": "(?i)\\b(scada|ics|plc|hmi|modbus|smartgrid|bms|building\\-management)\\b"
+}
